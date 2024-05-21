@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-image: url('./asset/book.jpg'); /* Specify the path to your image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+        }
+        .container5 {
+            max-width: 1200px;
+            margin: 20px auto; /* Added margin for space */
+            padding: 20px;
+            background-color: #f9f9f9; /* Light gray background color */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            overflow: hidden; /* Prevent columns from overflowing */
+        }
+
+        .contact-info-container {
+            margin-bottom: 10px; /* Adjusted margin for space between icons */
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#profile">About</a></li>
+            <li><a href="#new">Skills</a></li>
+            <li><a href="#new">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="profile">
+        <!-- Profile section content -->
+        <div class="section__pic-container">
+            <img src="./asset/emoji.png" alt="Mala profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mala</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./asset/Mala-Resume.pdf')">Download CV</button><br></br>
+                <div class="text-container">
+                    <p style="color: black;">
+                        I am a computer science engineering student and a team player, capable of easily adapting to any situation. I am a self-motivated individual, always eager to learn. I enjoy pursuing hobbies related to my field. I am excited to learn about new technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="new">
+        <div class="container5">
+            <div class="newspaper">
+                <!-- Newspaper section content -->
+                <div class="column-1">
+                    <h2><i class="fas fa-code"></i> Skills</h2><br></br>
+                    <ul>
+                        <li>Python</li><br></br>
+                        <li>HTML</li><br></br>
+                        <li>CSS</li><br></br>
+                        <li>Flask</li><br></br>
+                        <li>SQLite3</li><br></br>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="column-2">
+                    <h2><i class="fas fa-tasks"></i> To-do List</h2>
+                    <p>Python-based project featuring a user interface capable of performing all the operations a to-do list typically does.</p>
+                    <a href="https://github.com/Mala-codehub/codsoft/tree/main/contactbook/task1" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a>
+                    <h2><i class="fas fa-address-book"></i> Contact Book</h2>
+                    <p>A Python-based application for storing data using SQLite3. It's capable of performing CRUD operations.</p>
+                    <a href="https://github.com/Mala-codehub/codsoft/tree/main/To-do%20list" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a>
+                    <h2><i class="fas fa-credit-card"></i> Credit Card Fraud Detection</h2>
+                    <p>Add an additional criterion to improve accuracy from 96% to 98%</p>
+                    <h2><i class="fas fa-fire"></i> Detection of Animal and Forest Fire</h2>
+                    <p>Merge two different projects into one and enhance the security of the people living in the nearest forest area.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <!-- Contact section content -->
+        <div class="contact-info-upper-container" style="background-color: white;">
+            <div class="contact-info-container" >
+                <img src="./asset/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:mala.1701115@srec.ac.in">mala.1701115@srec.ac.in</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./asset/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/mala-sabarinathan/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Developed By @Mala &#169; 2024.</p>
+    </footer>
+</body>
+</html>
